@@ -126,8 +126,8 @@ EOF
         echo -e "\033[35;1mEnabling nginx.org repo for Debian $RELEASE. \033[0m"
         cat > /etc/apt/sources.list.d/nginx.list <<EOF
 # Official Nginx.org repository
-deb http://nginx.org/packages/`echo $DISTRO | tr '[:upper:]' '[:lower:]'`/ $RELEASE nginx
-deb-src http://nginx.org/packages/`echo $DISTRO | tr '[:upper:]' '[:lower:]'`/ $RELEASE nginx
+deb http://nginx.org/packages/mainline/`echo $DISTRO | tr '[:upper:]' '[:lower:]'`/ $RELEASE nginx
+deb-src http://nginx.org/packages/mainline/`echo $DISTRO | tr '[:upper:]' '[:lower:]'`/ $RELEASE nginx
 
 EOF
 
